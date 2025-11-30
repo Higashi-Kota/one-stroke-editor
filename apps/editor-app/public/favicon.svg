@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background: dark asphalt -->
+  <rect width="32" height="32" rx="4" fill="#1f2937"/>
+
+  <!-- Road surface (gray) -->
+  <path d="M6.5 3 L6.5 12 Q6.5 16 10.5 16 L21.5 16 Q25.5 16 25.5 20 L25.5 29"
+        fill="none"
+        stroke="#4b5563"
+        stroke-width="7"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Road left/bottom edge (yellow) - follows outer curve then inner -->
+  <path d="M4 3 L4 12 Q4 18.5 10.5 18.5 L21.5 18.5 Q23 18.5 23 20 L23 29"
+        fill="none"
+        stroke="#fbbf24"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Road right/top edge (yellow) - follows inner curve then outer -->
+  <path d="M9 3 L9 12 Q9 13.5 10.5 13.5 L21.5 13.5 Q28 13.5 28 20 L28 29"
+        fill="none"
+        stroke="#fbbf24"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Center line (dashed white) -->
+  <path d="M6.5 3 L6.5 12 Q6.5 16 10.5 16 L21.5 16 Q25.5 16 25.5 20 L25.5 29"
+        fill="none"
+        stroke="#fff"
+        stroke-width="0.8"
+        stroke-dasharray="2,2"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Start marker -->
+  <circle cx="6.5" cy="3" r="2.5" fill="#22c55e"/>
+
+  <!-- Goal marker -->
+  <circle cx="25.5" cy="29" r="2.5" fill="#ef4444"/>
+</svg>

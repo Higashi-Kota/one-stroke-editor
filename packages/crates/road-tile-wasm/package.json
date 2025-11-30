@@ -1,0 +1,26 @@
+{
+  "name": "@road-tile/wasm",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "wasm-pack build --target web --out-dir pkg",
+    "build:release": "wasm-pack build --target web --out-dir pkg --release",
+    "test": "cargo test"
+  },
+  "files": [
+    "pkg"
+  ],
+  "main": "./pkg/road_tile_wasm.js",
+  "types": "./pkg/road_tile_wasm.d.ts",
+  "exports": {
+    ".": {
+      "import": "./pkg/road_tile_wasm.js",
+      "types": "./pkg/road_tile_wasm.d.ts"
+    },
+    "./pkg/*": {
+      "import": "./pkg/*",
+      "types": "./pkg/*"
+    }
+  }
+}

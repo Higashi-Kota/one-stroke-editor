@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs (will be built in container)
+dist/
+**/dist/
+packages/crates/road-tile-wasm/pkg/
+packages/crates/road-tile-wasm/target/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.*
+
+# Documentation (not needed for build)
+AGENTS.md
+README.md
+LICENSE
+
+# Screenshots
+screenshots/
+
+# Config files not needed for build
+taze.config.js
